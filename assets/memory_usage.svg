@@ -1,0 +1,62 @@
+<svg width="350" height="220" viewBox="0 0 350 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="350" height="220" rx="8" fill="#0b0f19" />
+  
+  <!-- Grid Lines -->
+  <line x1="85" y1="170" x2="320" y2="170" stroke="#1f293d" stroke-width="1" />
+  <line x1="85" y1="100" x2="320" y2="100" stroke="#1f293d" stroke-width="1" />
+  <line x1="85" y1="30" x2="320" y2="30" stroke="#1f293d" stroke-width="1" />
+  
+  <!-- Title -->
+  <text x="18" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8" letter-spacing="0.5">SYSTEM MEMORY FOOTPRINT (RSS)</text>
+  
+  <!-- Y-Axis Labels -->
+  <text x="75" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#64748b" text-anchor="end">0 MB</text>
+  <text x="75" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#64748b" text-anchor="end">250 MB</text>
+  <text x="75" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#64748b" text-anchor="end">500 MB</text>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="chrome-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="midori-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <linearGradient id="base-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+    <linearGradient id="excision-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#7e22ce" />
+    </linearGradient>
+  </defs>
+
+  <!-- Bar 1: Chrome Desktop GUI (450 MB) -->
+  <rect x="95" y="44" width="28" height="126" rx="3" fill="url(#chrome-grad)" />
+  <text x="109" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#60a5fa" text-anchor="middle">450</text>
+
+  <!-- Bar 2: Midori Minimal GUI (280 MB) -->
+  <rect x="145" y="92" width="28" height="78" rx="3" fill="url(#midori-grad)" />
+  <text x="159" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#94a3b8" text-anchor="middle">280</text>
+  
+  <!-- Bar 3: Specter Base (180 MB) -->
+  <rect x="195" y="120" width="28" height="50" rx="3" fill="url(#base-grad)" />
+  <text x="209" y="113" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#22d3ee" text-anchor="middle">180</text>
+  
+  <!-- Bar 4: Specter Excision (42 MB) -->
+  <rect x="245" y="158" width="28" height="12" rx="2" fill="url(#excision-grad)" />
+  <text x="259" y="151" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#c084fc" text-anchor="middle">42</text>
+
+  <!-- Labels -->
+  <text x="109" y="186" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="600" fill="#64748b" text-anchor="middle">Chrome GUI</text>
+  <text x="159" y="186" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="600" fill="#64748b" text-anchor="middle">Midori GUI</text>
+  <text x="209" y="186" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">Spec Base</text>
+  <text x="259" y="186" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="600" fill="#a855f7" text-anchor="middle">Spec Excis</text>
+  
+  <!-- Highlight Note -->
+  <text x="18" y="206" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#22c55e">⚡ 10.7x Memory reduction vs desktop Chrome</text>
+</svg>
